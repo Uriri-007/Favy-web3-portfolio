@@ -7,10 +7,6 @@
     --link-focus-bg: #090F4A;
 }
 
-html {
-    max-width: 768px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +24,7 @@ html {
 }
 
 body {
+    max-width: 800px;
     font-family: poppins, sans-serif;
     background-color: var(--body-bg-color);
     color: var(--body-primary-ft-color);
