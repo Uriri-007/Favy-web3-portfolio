@@ -1,0 +1,152 @@
+:root {
+    --copy-text-btn-color: #FFFFFF85;
+    --body-bg-color: #2A2A2AE8;
+    --body-primary-ft-color: #FFF7E6;
+    --connect-bg-color: #00000082;
+    --link-visited-color: #7A83E6;
+    --link-focus-bg: #090F4A;
+}
+
+html {
+    max-width: 768px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url("./assets/Grandover.ttf");
+    font-family: grandover;
+}
+
+@font-face {
+    src: url("./assets/Poppins-Regular.ttf");
+    font-family: poppins;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: var(--body-bg-color);
+    color: var(--body-primary-ft-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px black;
+}
+
+span.logo {
+    font-family: grandover, cursive;
+    font-size: 1.5rem;
+}
+
+button#copy-text {
+    display: flex;
+    gap: 8px;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    max-width: 125px;
+    font-size: 16.5px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--copy-text-btn-color);
+    transition: all 0.2s;
+    
+}
+
+button#copy-text:hover {
+    transform: scale(0.9);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+section.content {
+    padding: 1rem;
+}
+
+section.content > h1 {
+    line-height: 2ch;
+    margin-bottom: 6px;
+}
+
+span.greeting {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+p#about-me {
+    margin-top: 8px;
+}
+
+section.gallery-caption {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+section.gallery-caption > figure {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1ch;
+}
+
+section.gallery-caption > figure > img {
+    max-width: 200px;
+    width: 20vw;
+    border-radius: 50%;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+section.connect {
+    padding: 1rem 8px;
+    background-color: var(--connect-bg-color);
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+section.connect > ul {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+section.connect > ul > li {
+    list-style: none;
+}
+
+a.icon-link:link {
+    color: inherit;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 4px;
+    transition: all 0.2s;
+}
+
+a.icon-link:focus, a.icon-link:hover {
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: var(--link-focus-bg);
+}
+
+a.icon-link:visited {
+    color: var(--link-visited-color);
+}
